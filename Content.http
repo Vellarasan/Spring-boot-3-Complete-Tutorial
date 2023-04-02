@@ -1,0 +1,38 @@
+### To get all the content
+GET http://localhost:8080/api/content
+
+### To get content by Id
+GET http://localhost:8080/api/content/1
+
+### To create a new content
+POST http://localhost:8080/api/content
+Content-Type: application/json
+
+{
+  "id": 2,
+  "title": "T",
+  "description": "Second Content to be published",
+  "status": "TO_DO",
+  "type": "TEXT",
+  "createdDateTime": "2023-03-18T15:06:00.1831219",
+  "updatedDateTime": null,
+  "url": ""
+}
+
+### To update a content
+PUT http://localhost:8080/api/content/2
+Content-Type: application/json
+
+{
+  "id": 2,
+  "title": "Hello World 2 Newly Updated",
+  "description": "Second Content to be published - Updated Version",
+  "status": "TO_DO",
+  "type": "TEXT",
+  "createdDateTime": "2023-03-18T15:06:00.1831219",
+  "updatedDateTime": null,
+  "url": ""
+}
+
+### To delete a content
+DELETE http://localhost:8080/api/content/1
